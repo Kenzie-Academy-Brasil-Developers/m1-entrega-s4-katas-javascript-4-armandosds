@@ -2,6 +2,7 @@ const showResults = (imp) => {
     const div = document.getElementById('container');
     const h4 = document.createElement('h4');
     h4.innerText = imp;
+    h4.textContent = JSON.stringify(imp);
     div.appendChild(h4);
     console.log(imp);
 }
@@ -70,56 +71,62 @@ const kata9 = () => {
 showResults(kata9());
 
 const kata10 = () => {
-    // implemente aqui o código
+    lotrCitiesArray.splice(2, 0, "Rohan");
+    return lotrCitiesArray;
 }
-// showResults(kata10());
+showResults(kata10());
 
 const kata11 = () => {
-    // implemente aqui o código
+    lotrCitiesArray.splice(5, 1, "Deadest Marshes");
+    return lotrCitiesArray;
 }
-// showResults(kata11());
+showResults(kata11());
 
 const kata12 = () => {
-    // implemente aqui o código
+    return bestThing.slice(0, 14);
 }
-// showResults(kata12());
+showResults(kata12());
 
 const kata13 = () => {
-    // implemente aqui o código
+    return bestThing.slice(-12, -1);
 }
-// showResults(kata13());
+showResults(kata13());
 
 const kata14 = () => {
-    // implemente aqui o código
+    return bestThing.slice(23, 38);
 }
-// showResults(kata14());
+showResults(kata14());
 
 const kata15 = () => {
-    // implemente aqui o código
+    return bestThing.substring(bestThing.length - 12);
 }
-// showResults(kata15());
+showResults(kata15());
 
 const kata16 = () => {
-    // implemente aqui o código
+    return bestThing.substring(23, 38);
 }
-// showResults(kata16());
+showResults(kata16());
 
 const kata17 = () => {
-    // implemente aqui o código
+    lotrCitiesArray.pop();
+    return lotrCitiesArray;
 }
-// showResults(kata17());
+showResults(kata17());
 
 const kata18 = () => {
-    // implemente aqui o código
+    lotrCitiesArray.push("Deadest Marshes");
+    return lotrCitiesArray;
 }
-// showResults(kata18());
+showResults(kata18());
 
 const kata19 = () => {
-    // implemente aqui o código
+    lotrCitiesArray.shift();
+    return lotrCitiesArray;
 }
-// showResults(kata19());
+showResults(kata19());
 
 const kata20 = () => {
-    // implemente aqui o código
+    lotrCitiesArray.unshift("Mordor");
+    return lotrCitiesArray;;
 }
-// showResults(kata20());
+showResults(kata20());
