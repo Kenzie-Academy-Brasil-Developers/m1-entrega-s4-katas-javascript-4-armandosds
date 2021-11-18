@@ -1,12 +1,9 @@
 const showResults = (imp) => {
-    console.log(imp);
-}
-
-const criaElementos = () => {
     const div = document.getElementById('container');
     const h4 = document.createElement('h4');
-    h4.innerText = showResults;
-    h4.appendChild(div);
+    h4.innerText = imp;
+    div.appendChild(h4);
+    console.log(imp);
 }
 
 const gotCitiesCSV = "King's Landing,Braavos,Volantis,Old Valyria,Free Cities,Qarth,Meereen";
@@ -26,96 +23,103 @@ const kata1 = () => {
 showResults(kata1());
 
 const kata2 = () => {
-    // implemente aqui o código
+    let resultado = bestThing.split(' ');
+    let array = [];
+    for (let i = 0; i < resultado.length; i++) {
+        array.push(resultado[i]);
+    }
+    return array;
 }
-// kata2();
+showResults(kata2());
 
 const kata3 = () => {
-    // implemente aqui o código
+    return gotCitiesCSV.split(',').join('; ');
 }
-// kata3();
+showResults(kata3());
 
 const kata4 = () => {
-    // implemente aqui o código
+    return lotrCitiesArray.join(', ');
 }
-// kata4();
+showResults(kata4());
 
 const kata5 = () => {
-    // implemente aqui o código
+    return lotrCitiesArray.slice(0, 5);
 }
-// kata5();
+showResults(kata5());
 
 const kata6 = () => {
-    // implemente aqui o código
+    return lotrCitiesArray.slice(4, 9);
 }
-// kata6();
+showResults(kata6());
 
 const kata7 = () => {
-    // implemente aqui o código
+    return lotrCitiesArray.slice(2, 5);
 }
-// kata7();
+showResults(kata7());
 
 const kata8 = () => {
-    // implemente aqui o código
+    lotrCitiesArray.splice(2,1 );
+    return lotrCitiesArray;
 }
-// kata8();
+showResults(kata8());
 
 const kata9 = () => {
-    // implemente aqui o código
+    lotrCitiesArray.splice(5,2 );
+    return lotrCitiesArray;
 }
-// kata8();
+showResults(kata9());
 
 const kata10 = () => {
     // implemente aqui o código
 }
-// kata10();
+// showResults(kata10());
 
 const kata11 = () => {
     // implemente aqui o código
 }
-// kata11();
+// showResults(kata11());
 
 const kata12 = () => {
     // implemente aqui o código
 }
-// kata12();
+// showResults(kata12());
 
 const kata13 = () => {
     // implemente aqui o código
 }
-// kata13();
+// showResults(kata13());
 
 const kata14 = () => {
     // implemente aqui o código
 }
-// kata14();
+// showResults(kata14());
 
 const kata15 = () => {
     // implemente aqui o código
 }
-// kata15();
+// showResults(kata15());
 
 const kata16 = () => {
     // implemente aqui o código
 }
-// kata16();
+// showResults(kata16());
 
 const kata17 = () => {
     // implemente aqui o código
 }
-// kata17();
+// showResults(kata17());
 
 const kata18 = () => {
     // implemente aqui o código
 }
-// kata18();
+// showResults(kata18());
 
 const kata19 = () => {
     // implemente aqui o código
 }
-// kata19();
+// showResults(kata19());
 
 const kata20 = () => {
     // implemente aqui o código
 }
-// kata20();
+// showResults(kata20());
